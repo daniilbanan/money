@@ -1,0 +1,48 @@
+* {
+    font-size: 25px;
+}
+
+.data {
+    margin-top: 100px;
+    width: 100%;
+    padding: 0 50px;
+
+}
+input {
+    margin-bottom: 15px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+#showRes {
+    border-radius: 2px;
+    border-top: 2px solid #3CB371;
+    border-bottom: none;
+    padding: 15px;
+    background-color: #3CB371;
+}
+
+#showRes:hover {
+    background-color: #3CB380;
+}
+
+#showRes:active {
+    background-color: #3CB366;
+    border-top: 2px solid #228B22;
+}
+
+.hidden {
+    /* visibility: hidden; */
+    padding: 0 50px;
+    margin-top: 25px;
+}
+
+.show{
+    visibility: visible;
+}
+
+.res {
+    color: red;
+}
