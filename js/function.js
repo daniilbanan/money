@@ -1,29 +1,21 @@
-//Вычисление формулы
 
-var rate = document.getElementById("rate").value;
-var hours = document.getElementById("hours").value;
-var minutes = document.getElementById("minutes").value;
-var overHours = document.getElementById("overHours").value;
-var overMinutes = document.getElementById("overMinutes").value;
-var totalMinutes, totalOverMinutes;
-var overRate = rate + rate / 2;
+//раскомментируй - и счетчик не будет работать. что за?..
 
-function resultTotal() {
 
-    if (minutes == 15 || overMinutes == 15) {
-        totalMinutes = rate / 4;
-        totalOverMinutes = overRate / 4;
-    } else if (minutes == 30 || overMinutes == 30) {
-        totalminutes = rate / 2;
-        totalOverMinutes = overRate / 2;
-    } else if (minutes == 45 || overMinutes == 45) {
-        totalminutes = rate - rate / 4;
-        totalOverMinutes = overRate - overRate / 4;
-    }
+// window.onload = function () {
+//     var modal = document.querySelector('.hidden');
+//     var open = document.querySelector('.btn');
 
-    var resultOne = rate * hours + totalMinutes;
-    var resultTotal = resultOne + overRate * overHours + totalOverMinutes;
+//     open.addEventListener('click', show);
 
-    document.getElementById("resultOne").innerHTML = resultOne;
-    document.getElementById("resultTotal").innerHTML = resultTotal;
-}
+//     function show(evt) {
+//         evt.preventDefault();
+//         modal.classList.add('show');
+//     }
+
+//     document.addEventListener('keydown', function(evt) {
+//         if(evt.keyCode === 27) {
+//             modal.classList.remove('show');
+//         }
+//     })
+// }

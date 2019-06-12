@@ -6,6 +6,7 @@
     margin-top: 100px;
     width: 100%;
     padding: 0 50px;
+    display: block;
 
 }
 input {
@@ -16,7 +17,7 @@ input {
     outline: none;
 }
 
-#showRes {
+.btn {
     border-radius: 2px;
     border-top: 2px solid #3CB371;
     border-bottom: none;
@@ -24,23 +25,22 @@ input {
     background-color: #3CB371;
 }
 
-#showRes:hover {
+.btn:hover {
     background-color: #3CB380;
 }
 
-#showRes:active {
+.btn:active {
     background-color: #3CB366;
     border-top: 2px solid #228B22;
 }
 
 .hidden {
-    /* visibility: hidden; */
+    display: none;
     padding: 0 50px;
-    margin-top: 25px;
 }
 
 .show{
-    visibility: visible;
+    display: block;
 }
 
 .res {
