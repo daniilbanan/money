@@ -12,15 +12,15 @@
 
 <body>
     <div class="data">
-        Ставка: <input type="text" id="rate"> руб./час <br>
+        Ставка: <input type="password" id="rate"> руб./час <br>
         Время работы: <input type="text" id="hours" value=""> часов <input type="text" id="minutes" value=""> минут<br>
         Время переработки: <input type="text" id="overHours" value=""> часов <input type="text" id="overMinutes"
             value=""> минут<br><br>
-        <input type="submit" class="showRes" value="Узнать результат">
+        <input type="submit" id="showRes" value="Узнать результат" >
     </div>
     <div class="hidden">
-        Сумма без переработок: <span id="resultOne"></span><br>
-        Сумма c переработками: <span id="resultTotal"></span><br>
+        Сумма без переработок: <span id="result"></span><br>
+        Сумма c переработками: <span id="overResult"></span><br>
     </div>
 </body>
 
