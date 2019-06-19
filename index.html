@@ -12,10 +12,10 @@
 
 <body>
     <div class="data">
-        Ставка: <input type="password" id="rate"> руб./час <br>
-        Время работы: <input type="text" id="hours" value=""> часов <input type="text" id="minutes" value=""> минут<br>
-        Время переработки: <input type="text" id="overHours" value=""> часов <input type="text" id="overMinutes"
-            value=""> минут<br><br>
+        Ставка: <input type="password" id="rate" onkeyup="this.value = this.value.replace (/\D/, '')"> руб./час <br>
+        Время работы: <input type="text" id="hours" value="" onkeyup="this.value = this.value.replace (/\D/, '')"> часов <input type="text" id="minutes" value="" onkeyup="this.value = this.value.replace (/\D/, '')"> минут<br>
+        Время переработки: <input type="text" id="overHours" value="" onkeyup="this.value = this.value.replace (/\D/, '')"> часов <input type="text" id="overMinutes"
+            value="" onkeyup="this.value = this.value.replace (/\D/, '')"> минут<br><br>
         <input type="submit" id="showRes" value="Узнать результат" >
     </div>
     <div class="hidden">
