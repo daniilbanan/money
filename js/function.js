@@ -13,11 +13,10 @@ window.onload = function() {
         let minutes = parseInt(document.getElementById('minutes').value);
         let overHours = parseInt(document.getElementById('overHours').value);
         let overMinutes = parseInt(document.getElementById('overMinutes').value);
-        let overRate = rate + rate / 2;
 
         let result = rate * hours + rate / 60 * minutes;
         let result_str = result.toFixed(2);
-        let overResult = result + (overRate * overHours + overRate / 60 * overMinutes);
+        let overResult = result + ((rate * overHours + rate / 60 * overMinutes) / 2);
         let overResult_str = overResult.toFixed(2);
 
         document.getElementById('result').innerHTML = result_str;
