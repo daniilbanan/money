@@ -8,7 +8,15 @@
 
     </form>
 </div>
-<?php
 
-    include __DIR__ . '/result.php';
-?> 
+<div class="data">
+    <?php
+    
+
+    if (is_numeric($resultOne)) {
+        echo 'Сумма без переработок: <span class="res">' . $resultOne . '</span><br>' . 'Сумма с переработками: <span class="res">' . $resultTotal . '</span>';
+    }
+
+    ?>
+
+</div>
